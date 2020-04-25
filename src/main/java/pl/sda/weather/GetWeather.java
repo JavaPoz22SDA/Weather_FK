@@ -14,5 +14,6 @@ public class GetWeather {
         Weather object = mapper.readValue(new URL(url), Weather.class);
         System.out.println(object.getCurrent().getTemperature());
 
+
     }
 }
