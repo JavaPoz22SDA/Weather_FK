@@ -1,12 +1,1 @@
-{
-  "temperature": 34.33,
-  "city": "Poznań",
-  "request": {
-    "type": "City",
-    "query": "Poznan, Poland"
-  },
-  "location": {
-    "name": "Poznań",
-    "country": "Poland"
-  }
-}
+{"temperature":34.33,"city":"Poznań","request":{"type":"City","query":"Poznan, Poland","language":"pl","unit":"m"},"location":{"name":"Poznań","country":"Poland","region":"Wielkopolska","lat":40.5,"lon":48.7,"timeZoneId":"środkowo-europejski","localtime":"coś","localtimeEpoch":15,"utc_offset":-4.0}}

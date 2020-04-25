@@ -10,8 +10,8 @@ public class Main {
 
         ObjectMapper mapper = new ObjectMapper();
 
-        Weather weather = new Weather(23.5, "Poznań",new Request("City", "Poznan, Poland"),
-                                                                        new Location("Poznań","Poland"));
+        /*Weather weather = new Weather(23.5, "Poznań",new Request("City", "Poznan, Poland","pl","m"),
+                                                                        new Location("Poznań","Poland","Wielkopolska",40.5,48.7,"środkowo-europejski","coś",15,-4.0));
         System.out.println(weather.getTemperature());
         weather.setTemperature(34.33);
         System.out.println(weather.getTemperature());
@@ -27,7 +27,7 @@ public class Main {
         vehicle.setNumberCylinders(4);
         System.out.println(vehicle.getNumberCylinders());
 
-        mapper.writeValue(new File("vehicle.json"), vehicle);
+        mapper.writeValue(new File("vehicle.json"), vehicle);*/
 
     }
 }
