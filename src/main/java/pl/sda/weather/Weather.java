@@ -7,16 +7,18 @@ public class Weather {
     private Request request;
     private Location location;
     private Current current;
+    private ErrorException error;
 
 
     public Weather() { }
 
-    public Weather(Request request, Location location, Current current) {
+    public Weather(Request request, Location location, Current current, ErrorException error) {
         //this.temperature = temperature;
         //this.city = city;
         this.request = request;
         this.location = location;
         this.current = current;
+        this.error = error;
     }
 
 //    public double getTemperature() {
@@ -57,5 +59,13 @@ public class Weather {
 
     public void setCurrent(Current current) {
         this.current = current;
+    }
+
+    public ErrorException getError() {
+        return error;
+    }
+
+    public void setError(ErrorException error) {
+        this.error = error;
     }
 }

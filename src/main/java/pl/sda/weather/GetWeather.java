@@ -22,11 +22,10 @@ public class GetWeather {
 
         WeatherService weatherService = new WeatherService("http://api.weatherstack.com/current", API_KEY);
         String city = scan.nextLine();
-        try {
-            Weather weather = weatherService.getCityWeather(city);
+
+        Weather weather = weatherService.getCityWeather(city);
+        if(weather != null){
             System.out.println("Temperatura w " + weather.getLocation().getName() + " wynosi: " + weather.getCurrent().getTemperature());
-        }catch (UnrecognizedPropertyException e){
-            System.out.println("Podana miejscowość nie istnieje");
         }
     }
 }
